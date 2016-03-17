@@ -1,0 +1,10 @@
+<serviceGroup>
+  <service name="IBLCreditWebService" targetNamespace="http://impl.service.apps.arcot.com/">
+    <description>JNLPGenerator service</description>
+    <schema schemaNamespace="http://impl.service.apps.arcot.com/" />
+    <parameter name="ServiceClass" locked="false">com.arcot.apps.service.impl.IBLCreditServiceImpl</parameter>
+    <operation name="ivrOperation">
+      <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+    </operation>
+  </service>
+</serviceGroup>
